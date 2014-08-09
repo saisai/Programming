@@ -19,7 +19,7 @@ import optparse
 class LogCleanUp:
 
 	appName = ""
-	logDirectory = '' 	#'/var/log/vlingo/ a list of tuples (log_file, modified_date, web_app)
+	logDirectory = '' 	#' a list of tuples (log_file, modified_date, web_app)
 	l_allLogs = []
 
 	def __init__(self, app, directory):
@@ -85,7 +85,7 @@ class LogCleanUp:
 		
 			
 ########## MAIN PROGRAM ############
-logDir = '/var/log/vlingo/' 				
+logDir = '/tmp/jones/sweatTea/' 				
 
 parser = optparse.OptionParser()
 parser.add_option('-w', '--webapp', dest='webapp', help='WebApp Name')

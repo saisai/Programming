@@ -17,7 +17,7 @@ class ModelBranches:
 	
 	l_allBranchDirs = []
 	path = ""
-	fileABProps = '/var/mobeus/srcache/ABSelector.properties'
+	fileABProps = '/partial/folder/name/A/usr/local/rest/of/folder/branches/ap.properties'
 	
 	def __init__(self, path):
 		self.path = path
@@ -84,10 +84,10 @@ class ModelBranches:
 		
 		if bool == True:
 			if let == 'A':
-				self.path = '/var/mobeus/srcache/A/usr/local/mobeus/models/vlingo/branches/'
+				self.path = '/partial/folder/name/A/usr/local/rest/of/folder/branches/'
 				print let ," folder was selected"
 			else:
-				self.path = '/var/mobeus/srcache/B/usr/local/mobeus/models/vlingo/branches/'
+				self.path = '/partial/folder/name/B/usr/local/rest/of/folder/branches/'
 				print let," folder was selected"
 		else:
 			sys.exit()
@@ -128,9 +128,9 @@ class ModelBranches:
 		
 		
 ##### MAIN PROGRAM #########
-filePath='/var/mobeus/srcache/A/usr/local/mobeus/models/vlingo/branches/'
+filePath='/partial/folder/name/A/usr/local/rest/of/folder/branches/'
 
-if filePath != '/var/mobeus/srcache/A/usr/local/mobeus/models/vlingo/branches/':
+if filePath != '/partial/folder/name/A/usr/local/rest/of/folder/branches/':
 		print "\nWARNING: Path does not match branch path. Please enter the correct path"
 		
 		
