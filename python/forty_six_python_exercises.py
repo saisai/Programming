@@ -151,6 +151,19 @@ def find_longest_word(word_list):
 	"Returns the length of the longest word in the list"
 	return max_in_list(map_word_to_length(word_list))
 	
+def filter_long_words(word_list, n):
+	"Returns a list of words that are longer than n"
+	
+	ln = map_word_to_length(word_list)
+	l_long_words = []
+	
+	for w in range(0, len(ln)):
+		
+		if ln[w] > n:
+			l_long_words.append(word_list[w])
+	
+	return l_long_words
+	
 	
 	
 ### MAIN PROGRAM ###
@@ -170,4 +183,5 @@ def find_longest_word(word_list):
 # print generate_n_chars(10, '*')
 # histogram([1,2,3,4,5,6,7,8,9,10])
 # print max_in_list([1,103,3,-256,1,5,65,102,26])
-#print find_longest_word(['ROTAVATOR ', 'ABSTENTIOUS', 'car', 'banana', 'SUBDERMATOGLYPHIC'])
+# print find_longest_word(['ROTAVATOR ', 'ABSTENTIOUS', 'car', 'banana', 'SUBDERMATOGLYPHIC'])
+# print filter_long_words(['dog','apple','cat', 'pizza'], 3)
