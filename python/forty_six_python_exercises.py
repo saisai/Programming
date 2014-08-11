@@ -164,8 +164,19 @@ def filter_long_words(word_list, n):
 	
 	return l_long_words
 	
+def palindrome_recognizer(str):
 	
+	tmpStr = ""
+	for i in str:
+		
+		if i.isalpha():
+			tmpStr += i
 	
+	return is_palindrome(tmpStr.lower())
+	
+def is_pangram(str):
+	
+	for 
 ### MAIN PROGRAM ###
 # print max_of_three(1,2,3)
 # print max_of_three(5,2,-1)
@@ -185,3 +196,7 @@ def filter_long_words(word_list, n):
 # print max_in_list([1,103,3,-256,1,5,65,102,26])
 # print find_longest_word(['ROTAVATOR ', 'ABSTENTIOUS', 'car', 'banana', 'SUBDERMATOGLYPHIC'])
 # print filter_long_words(['dog','apple','cat', 'pizza'], 3)
+print palindrome_recognizer("Was it a rat I saw")
+print palindrome_recognizer("Sit on a potato pan, Otis")
+print palindrome_recognizer("Step on no pets")
+print palindrome_recognizer("Go hang a salami I'm a lasagna hog.")
